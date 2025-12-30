@@ -1,0 +1,52 @@
+.container {
+  background-color: #fffdf8;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e8ddcf;
+  max-width: 700px;
+  margin: 2rem auto;
+  line-height: 1.7;
+  color: #3a2a1a;
+}
+
+/* Headings */
+.markdown h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #3a2a1a;
+}
+
+/* Section titles like Ingredients / Instructions */
+.markdown strong {
+  font-weight: 600;
+}
+
+/* Lists */
+.markdown ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.markdown p {
+  margin-bottom: 1rem;
+}
+
+/* Emphasis */
+.markdown em {
+  font-style: italic;
+}
+
+/* Optional highlight for steps */
+.markdown ol {
+  padding-left: 1.5rem;
+}
+
+.markdown ol li {
+  margin-bottom: 0.75rem;
+}

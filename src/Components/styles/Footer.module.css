@@ -1,0 +1,14 @@
+.footer {
+  margin-top: auto;
+  padding: 1.5rem;
+  text-align: center;
+
+  background-color: #fff6e9;      /* soft cream */
+  color: #6b4e2e;                 /* warm brown */
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+
+  border-top: 1px solid #e8ddcf;
+}

@@ -1,0 +1,50 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Individual list item */
+.item {
+  padding: 0.75rem 1rem;
+
+  background-color: #fffdf8;
+  border: 1px solid #e8ddcf;
+  border-radius: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #3a2a1a;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    height 0.6s ease,
+    margin 0.6s ease;
+}
+
+/* Hover feedback */
+.item:hover {
+  background-color: #fff3e0;
+  transform: translateX(2px);
+}
+
+/* Removal animation */
+.removing {
+  opacity: 0;
+  transform: translateX(-10px);
+  height: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}

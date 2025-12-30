@@ -1,0 +1,19 @@
+.about {
+  background-color: #fff6e9; /* soft cream */
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top: 1px solid #e8ddcf;
+  border-bottom: 1px solid #e8ddcf;
+}
+
+.heading {
+  max-width: 720px;
+  margin: 0 auto;
+
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  color: #3a2a1a;
+}
