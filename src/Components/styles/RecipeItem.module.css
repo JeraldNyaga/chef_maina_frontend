@@ -48,3 +48,9 @@
   padding-bottom: 0;
   overflow: hidden;
 }
+
+@media (max-width: 500px){
+  .item{
+    margin: 0 1em;
+  }
+}
