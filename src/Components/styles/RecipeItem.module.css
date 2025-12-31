@@ -16,7 +16,7 @@
   background-color: #fffdf8;
   border: 1px solid #e8ddcf;
   border-radius: 8px;
-
+  text-transform: capitalize;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #3a2a1a;
@@ -37,8 +37,10 @@
   background-color: #fff3e0;
   transform: translateX(2px);
 }
+.item button:hover{
+  background-color: rgb(179, 48, 48);
+}
 
-/* Removal animation */
 .removing {
   opacity: 0;
   transform: translateX(-10px);
@@ -52,5 +54,9 @@
 @media (max-width: 500px){
   .item{
     margin: 0 1em;
+  }
+  .item button{
+    width: 50px;
+    padding: .5em;
   }
 }

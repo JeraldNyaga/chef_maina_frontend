@@ -57,10 +57,13 @@ button:active {
 }
 
 @media (max-width: 500px) {
-	button {
-		padding: 0.5rem 0.8rem;
-		font-size: 0.8rem;
-		font-weight: 600;
+	.formInner {
+		flex-direction: column;
+		gap: 1rem;
+		width: 100%;
+		max-width: 500px;
 	}
-
+	button {
+		width: 100%;
+	}
 }

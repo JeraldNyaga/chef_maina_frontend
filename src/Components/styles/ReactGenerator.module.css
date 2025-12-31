@@ -32,21 +32,32 @@
   margin-bottom: 0.5rem;
 }
 
-/* Paragraphs */
+
 .markdown p {
   margin-bottom: 1rem;
 }
 
-/* Emphasis */
+
 .markdown em {
   font-style: italic;
 }
 
-/* Optional highlight for steps */
+
 .markdown ol {
   padding-left: 1.5rem;
 }
 
 .markdown ol li {
   margin-bottom: 0.75rem;
+}
+
+.error{
+  margin: 1em auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+@media (max-width:600px){
+  .markdownContainer{
+    margin: 0 0.5em;
+  }
 }

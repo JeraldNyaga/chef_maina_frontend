@@ -50,14 +50,14 @@ export default function RecipeGenerator({
 	},[recipe])
 
 	return (
-		<div>
+		<div className={styles.markdownContainer}>
 			{loading && (
 				<div className={styleSpinner.spinnerWrapper}>
 					<Spinner />
 				</div>
 			)}
 
-			{error && <p style={{ color: "red" }}>{error}</p>}
+			{error && <p className={styles.error}style={{ color: "red" }}>{error}</p>}
 
 			{recipe && (
 				<div ref={recipeRef} className={styles.container}>
