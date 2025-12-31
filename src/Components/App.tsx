@@ -13,6 +13,7 @@ export default function App(): JSX.Element {
 	const [ingridients, setIngridients] = useState<string[]>([]);
 	const [removingItem, setRemovingItem] = useState<string | null>(null);
 	const [getRecipe, setGetRecipe] = useState<boolean>(false);
+	const [recipeReady, setRecipeReady] = useState<boolean>(false)
 
 	function handleGetRecipe() {
 		setGetRecipe(true);
@@ -21,6 +22,7 @@ export default function App(): JSX.Element {
 	function handleNewRecipe() {
 		setIngridients([]);
 		setGetRecipe(false);
+		setRecipeReady(false)
 	}
 
 	function handleSubmit(formData: FormData): void {
@@ -68,9 +70,10 @@ export default function App(): JSX.Element {
 					<RecipeGenerator
 						ingredients={ingridients}
 						prepareRecipe={getRecipe}
+						onRecipeReady={()=>setRecipeReady(true)}
 					/>
 				)}
-				{getRecipe && (
+				{recipeReady && (
 					<button
 						className={buttonStyle.close_button}
 						onClick={handleNewRecipe}
