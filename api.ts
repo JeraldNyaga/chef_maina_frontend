@@ -1,5 +1,6 @@
 export async function generateRecipe(ingredients: string[]) {
-	const res = await fetch("http://localhost:8000/generate-recipe", {
+	const API_URL = import.meta.env.VITE_API_URL;
+	const res = await fetch(`${API_URL}/generate-recipe`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
